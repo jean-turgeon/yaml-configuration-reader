@@ -1,0 +1,25 @@
+application:
+  identifier: config-server
+  base_url: http://127.0.0.1
+  port: 8080
+  consumer:
+    protocol: kafka
+    topics:
+      - topic.input.1
+      - topic.input.2
+      - topic.input.3
+    is_ssl_enabled: false
+    is_proto_enabled: false
+  producer:
+    protocol: tcp
+    host: 0.0.0.0
+    port: 2222
+    topics:
+      - ais.producer.output
+    is_ssl_enabled: false
+    is_proto_enabled: false
+  log_level: DEBUG
+  cache:
+    size: 10000
+    cleanup_interval_seconds: 600
+    time_to_live_seconds: 3600
