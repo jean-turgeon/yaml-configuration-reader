@@ -4,6 +4,7 @@ A small demo on how to read a Yaml config file and make it available as a key, v
 
 
 ## Repository content
+```
 .
 ├── Cargo.lock
 ├── Cargo.toml
@@ -12,7 +13,7 @@ A small demo on how to read a Yaml config file and make it available as a key, v
     ├── configs.yaml
     ├── configuration.rs
     └── main.rs
-
+```
 
 ## Build
 ```bash
